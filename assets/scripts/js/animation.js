@@ -11,26 +11,49 @@ persoImages.forEach((image, index) => {
     });
 });
 
-function scroller(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
+const btnVoirLeHeros = document.querySelector('.cta .btn:nth-child(1)');
+const btnLesAdversaires = document.querySelector('.cta .btn:nth-child(2)');
 
-function activerEffetDeScroll() {
-    const sections = document.querySelectorAll('.batman-cinema');
+btnVoirLeHeros.addEventListener('click', (e) => {
+e.preventDefault();
+scrollToSection('batman-cinema');
+});
 
-    sections.forEach((section) => {
-    if (scroller(section) && !section.classList.contains('animate')) {
-        section.classList.add('animate');
-    }
+btnLesAdversaires.addEventListener('click', (e) => {
+e.preventDefault(); 
+scrollToSection('enemis'); 
+});
+
+function scrollToSection(sectionId) {
+const section = document.getElementById(sectionId);
+if (section) {
+    window.scrollTo({
+    top: section.offsetTop,
+    behavior: 'smooth'
     });
 }
+}
 
-window.addEventListener('scroll', activerEffetDeScroll);
+// function scroller(el) {
+//     const rect = el.getBoundingClientRect();
+//     return (
+//     rect.top >= 0 &&
+//     rect.left >= 0 &&
+//     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//     );
+// }
 
-activerEffetDeScroll();
+// function activerEffetDeScroll() {
+//     const sections = document.querySelectorAll('.batman-cinema');
+
+//     sections.forEach((section) => {
+//     if (scroller(section) && !section.classList.contains('animate')) {
+//         section.classList.add('animate');
+//     }
+//     });
+// }
+
+// window.addEventListener('scroll', activerEffetDeScroll);
+
+// activerEffetDeScroll();

@@ -1,6 +1,4 @@
 #hero {
-    position: relative;
-    z-index: -2;
     background: url('./../Illustrations/Bathome1.png');
     height: 850px;
     background-position: top center;
@@ -14,20 +12,20 @@
         font-size: 25px;
     }
 
-    .cta {
-        margin-top: 40px;
-        
-        .btn {
-            text-decoration: none;
-            color: $white;
-            font-size: 18px;
-            padding: 20px 40px;
-            background: linear-gradient(80deg, $gradient-white,$gradient-red);
-            box-shadow: $black 5px 5px 60px;
-            margin: 0 20px;
-            text-transform: uppercase;
-            position: relative;
-            z-index: 7;
+    .content {
+        .cta {
+            margin-top: 40px;
+            .btn {
+                pointer-events: auto;
+                text-decoration: none;
+                color: $white;
+                font-size: 18px;
+                padding: 20px 40px;
+                background: linear-gradient(80deg, $gradient-white,$gradient-red);
+                box-shadow: $black 5px 5px 60px;
+                margin: 0 20px;
+                text-transform: uppercase;
+            }
         }
     }
 
