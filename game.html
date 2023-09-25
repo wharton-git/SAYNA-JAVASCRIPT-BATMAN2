@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman | Game</title>
+    <link rel="stylesheet" href="./assets/style/Style.css">
+</head>
+<body id="body-game">
+    <div class="contour">
+        <div class="cote-game"></div>
+    </div>
+        <header >
+            <nav class="container">
+                <a href="index.html">
+                    <img class="logo-hover" src="./assets/Logos/logohome.png" alt="logo">
+                </a>
+                <ul>
+                    <li>
+                        <a class="lien-nav" href="./index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a class="lien-nav" href="./game.html">GAME</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="scroll">
+                <img id="toTop" src="./assets/Logos/logo_bat_flèche.png" alt="">
+                <img class="rsc" src="./assets/Logos/icon_facebook.png" alt="">
+                <img class="rcs" src="./assets/Logos/icon_ig.png" alt="">
+                <img class="rcs" src="./assets/Logos/icon_tw.png" alt="">
+                <img id="toBottom" src="./assets/Logos/logo_bat_flèche_2.png" alt="">
+            </div>
+
+            <section class="debut-game">
+                <div class="container">
+                    <div class="content-game">
+                        <h1 class="start-text">Let's play a <br>Little game...</h1>
+                    </div>
+                </div>
+                <img class="flecheBas" src="./assets/Logos/flèche_down_header.png" alt="flèche vers le bas">
+            </section>
+
+        <section id="question-game-start">
+            <div class="container">
+                <div class="quiz-card">
+                    <h1 class="titre">
+                        Connaissez vous bien le chevalier Noir ?
+                    </h1>
+                    <img src="./assets/Illustrations/Batgame_2.png" alt="">
+                </div>
+                <div class="btn-card">
+                    <button id="quiz-btn">Démarrer le quiz</button>
+                </div>
+            </div> 
+        </section>
+
+        <div id="pop-up-box" class="pop-up">
+            <div class="pop-up-content">
+                <span class="close">&times;</span>
+                <h2 id="result-titre">Résultat du Quiz</h2>
+                <p id="result"></p>
+                <button id="restart">Recommencer le quiz</button>
+            </div>
+        </div>
+        
+
+        <!-- <section id="question-game" class="hide-section">
+            <div class="container">
+                <div class="quiz-card">
+                    <h1 class="titre">
+                        <span id="num-quiz">1</span>/15
+                    </h1>
+                    <div class="quiz-item">
+                        <div class="quiz-question">
+                            <h2 id="quiz-question-text">QUESTION 1 ?</h2>
+                        </div>
+                        <div class="quiz-answers">
+                            <div>
+                                <input type="checkbox" name="answer" class="quiz-answer-box"><label for="answer" class="quiz-answer-text">A</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="answer" class="quiz-answer-box"><label for="answer" class="quiz-answer-text">B</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="answer" class="quiz-answer-box"><label for="answer" class="quiz-answer-text">C</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-card">
+                        <button id="submitBtn">Question Suivant</button>
+                    </div>
+                </div>
+                
+            </div> 
+        </section> -->
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="text-footer">
+                <img src="./assets/Logos/icon_WB.png" alt="">
+                <span> Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</span>
+            </div>
+            <div class="logo-footer">
+                <span class="part1">
+                    <a href="">
+                        <img src="./assets/Logos/logo_sayna_white.png" alt="">
+                        <img class="logo-x" src="./assets/Logos/icon_x.png" alt="">
+                        <img src="./assets/Logos/icon_DC.png" alt="">
+                    </a>
+                </span>
+                <span class="part2">
+                    <a href=""><img src="./assets/Logos/icon_facebook.png" alt=""></a> 
+                    <a href=""><img src="./assets/Logos/icon_ig.png" alt=""></a>
+                    <a href=""><img src="./assets/Logos/icon_tw.png" alt=""></a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/scripts/js/script.js"></script>
+    <script src="./assets/scripts/js/fetchApi.js"></script>
+</body>
+</html>

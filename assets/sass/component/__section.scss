@@ -1,0 +1,326 @@
+#hero {
+    position: relative;
+    z-index: -2;
+    background: url('./../Illustrations/Bathome1.png');
+    height: 850px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: $blue;
+    background-size: cover;
+
+    .titre-hero {
+        margin: 30px 0;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .cta {
+        margin-top: 40px;
+        
+        .btn {
+            text-decoration: none;
+            color: $white;
+            font-size: 18px;
+            padding: 20px 40px;
+            background: linear-gradient(80deg, $gradient-white,$gradient-red);
+            box-shadow: $black 5px 5px 60px;
+            margin: 0 20px;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 7;
+        }
+    }
+
+    .texte {
+        width: 86%;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+}
+
+
+#batman-cinema {
+    margin-top: 46px;
+}
+
+#allie {
+    margin-top: 200px;
+}
+
+.bat-cote {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    transform: translateY(-85%);
+}
+
+.batman-personnage {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.perso-item {
+    .perso-info {
+        text-align: center;
+    }
+}
+
+section {
+    .titre {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 30px 0;
+    }
+
+    .description {
+        margin-bottom: 30px;
+        text-align: justify;
+        width: 85%;
+        font-size: 21px; 
+    }
+
+    .flecheBas {
+        display: block;
+        margin: 0 auto;
+        margin-top: 250px;
+    }
+
+}
+
+#bat-item {
+    width: 120px;
+    position: relative;
+    transform: translate(100px,60px);
+}
+
+#justice-league-img {
+    position: relative;
+    z-index: 3;
+}
+
+#multimedia {
+    .button {
+        position: relative;
+        top: 155px;
+        background: none;
+    }
+
+    .slide {
+        display: flex;
+        width: 60%;
+        margin: 40px auto;
+
+        p {
+            font-size: 15px;
+            span {
+                color:$yellow;
+            }
+        }
+
+        .slide-img {
+            width:  100%;
+            
+            img {
+                height:  100%;
+            }
+        }
+
+        .slide-text {
+            padding: 15px;
+            background: linear-gradient($blue, darkgray);
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+}
+
+#right {
+    right: -82%;
+}
+#left {
+    left: 7%;
+}
+
+
+%area{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: $darkgrey 1px solid ;
+    padding: 10px 0;
+}
+
+#contact {
+    position: relative;
+    background: darkslategray; //linear gradient
+    padding: 70px 0;
+
+    .formulaire {
+        width: 50%;
+        margin: 0 auto;
+
+        h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 32px;
+        }
+
+        .titre-label {
+            display: block;
+            text-transform: uppercase;
+            margin: 25px 0;
+        }
+
+        input[type='email'],textarea{
+            @extend %area;
+
+            &::placeholder {
+                color: $darkgrey;
+            }
+        }
+
+        input[type='submit'] {
+            display: block;
+            border: none;
+            padding: 15px;
+            width: 250px;
+            margin: 25px auto;
+            cursor: pointer;
+            color: white;
+            font-family: 'Rajdhani';
+            font-size: 20px;
+            background: linear-gradient(45deg,$darkgrey, $gradient-red-light);
+        }
+
+        // input[type='radio']{
+        //     opacity: 0;
+        // }
+    }
+
+    .icon {
+        img{
+            transform: rotate(90deg);
+            width: 20px;
+        }
+    }
+
+    .news {
+        margin: 15px 0;
+        border-bottom: $darkgrey 1px solid ;
+    }
+
+    .btn-group {
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+
+        label {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid;
+            border-image: linear-gradient(69deg, $darkgrey, $blue) 1;
+            font-size: 17px;
+        }
+    }
+}
+
+#citation {
+    margin: 90px;
+
+    .item-citation {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+
+        .auteur-citation {
+            padding-top: 30px;
+            font-size: 12px;
+            width: 45%;
+            margin: 0 auto;
+            color: $darkgrey;
+        }
+    }
+
+    .guillemet-close {
+        float: right;
+    }
+}
+
+%quiz-btn {
+    text-transform: uppercase;
+    font-family: $Rajdhani;
+    font-size: 20px;
+    padding: 15px 60px;
+    border: none;
+    color: $white;
+    background: linear-gradient(90deg,$darkgrey, $game-orange);
+}
+
+#question-game-start {
+    margin: 10% 0 20% 0;
+    text-align: center;
+    .titre {
+        margin: 70px;
+        // font-weight: 200;
+    }
+    img {
+        width: 80%;
+    }
+
+    .btn-card {
+        margin: 40px 0;
+
+        button {
+            @extend %quiz-btn;
+        }
+    }
+}
+
+#question-game {
+    margin: 200px 0;
+    .quiz-card {
+        width: 60%;
+        margin: 0 auto 0 35%;
+    }
+    .btn-card {
+        button {
+            @extend %quiz-btn;
+            margin-top: 100px;
+        }
+    
+    }
+
+    .quiz-item {
+        #quiz-question-text {
+            font-size: 20px;
+            margin-bottom: 100px;
+        }
+    }
+
+    .quiz-answers {
+        margin: 20px 0;
+        div {
+            background: $darkgrey;
+            width: 300px;
+            text-align: left;
+            margin: 20px 0 0 0;
+            padding: 14px;
+        }
+
+        input[type="checkbox"]{
+            appearance:checkbox;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+    }
+}

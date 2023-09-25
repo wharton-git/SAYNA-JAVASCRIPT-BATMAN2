@@ -1,0 +1,10 @@
+nav {
+    a:hover {
+        color: $yellow;
+        text-decoration: underline;
+    }
+
+    .logo-hover:hover {
+        filter: invert(0%) sepia(100%) saturate(1680%) hue-rotate(350deg) brightness(109%) contrast(104%);
+    }
+}

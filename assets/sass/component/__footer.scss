@@ -1,0 +1,29 @@
+footer {
+    margin-bottom: 10%;
+    .text-footer {
+        text-align: center;
+        font-size: 12px;
+        margin: 40px 0;
+
+        img {
+            transform: translateY(6px);
+        }
+    }
+
+    .logo-footer {
+        text-align: center;
+
+        a{
+            padding: 10px;
+        }
+
+        .part1 a .logo-x {
+            margin: 0 10px;
+            transform: translateY(-10px);
+        }
+
+        .part2 a img{
+            transform: translateY(-8px);
+        }
+    }
+}

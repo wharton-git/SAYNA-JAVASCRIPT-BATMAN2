@@ -1,0 +1,83 @@
+@import "./__font";
+@import "./__colors";
+@import "./__contour";
+@import "./__navabar";
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: $Space;
+    font-weight: 300;
+}
+
+h1{
+    font-family: 'Rajdhani';
+    font-size: 36px;
+    font-weight: 400;
+}
+
+button{
+    font-family: $Rajdhani;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin:  0 auto;
+    padding-top: 370px;
+}
+
+.content-game {
+    display: block;
+    padding-top: 200px;
+    h1{
+        text-transform: uppercase;
+        font-size: 50px;
+        font-family: $Rajdhani;
+        line-height: 60px;
+    }
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 3.5%;
+    top: 180px;
+    z-index: 5;
+
+    .rcs {
+        margin-top: 25px;
+    }
+}
+
+#body-game {
+    background: url(./../Illustrations/Batgame_1.png);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: top center;
+    background-size: contain;
+    color: white;
+    font-family: 'space';
+}
+
+@import "./__section";
+@import "./__footer";
+@import "./__animation";
+@import "./__pop-up";
+
+.hide {
+    visibility: hidden;
+}

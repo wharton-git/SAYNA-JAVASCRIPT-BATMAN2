@@ -1,0 +1,33 @@
+%contour {
+    border: 2px $contourgray solid;
+    position: relative;
+    width: 85%;
+    left: 102px;
+    top: 143px;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+%cote {
+    position: absolute;
+    z-index: -1;
+    border: 4px $contourgray solid;
+    border-top: none;
+    border-bottom: none;
+    width: 100.5%;
+    transform: translateY(-200px) translateX(-2px);
+}
+
+.contour {
+    @extend %contour;
+}
+
+.cote {
+    @extend %cote;
+    height: 1117vh;
+}
+
+.cote-game {
+    @extend %cote;
+    height: 355vh;
+}

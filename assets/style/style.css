@@ -1,0 +1,515 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, a, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style-type: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  appearance: none;
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Rajdhani";
+  src: url(./../fonts/Rajdhani-Medium.ttf);
+}
+@font-face {
+  font-family: "space";
+  src: url(./../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+.contour {
+  border: 2px #bcbbbd solid;
+  position: relative;
+  width: 85%;
+  left: 102px;
+  top: 143px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.cote-game, .cote {
+  position: absolute;
+  z-index: -1;
+  border: 4px #bcbbbd solid;
+  border-top: none;
+  border-bottom: none;
+  width: 100.5%;
+  transform: translateY(-200px) translateX(-2px);
+}
+
+.cote {
+  height: 1117vh;
+}
+
+.cote-game {
+  height: 355vh;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 30px;
+}
+nav ul a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Rajdhani";
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "space";
+  font-weight: 300;
+}
+
+h1 {
+  font-family: "Rajdhani";
+  font-size: 36px;
+  font-weight: 400;
+}
+
+button {
+  font-family: "Rajdhani";
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 370px;
+}
+
+.content-game {
+  display: block;
+  padding-top: 200px;
+}
+.content-game h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: "Rajdhani";
+  line-height: 60px;
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: 3.5%;
+  top: 180px;
+  z-index: 5;
+}
+.scroll .rcs {
+  margin-top: 25px;
+}
+
+#body-game {
+  background: url(./../Illustrations/Batgame_1.png);
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: top center;
+  background-size: contain;
+  color: white;
+  font-family: "space";
+}
+
+#hero {
+  position: relative;
+  z-index: -2;
+  background: url("./../Illustrations/Bathome1.png");
+  height: 850px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #19587D;
+  background-size: cover;
+}
+#hero .titre-hero {
+  margin: 30px 0;
+  font-weight: bold;
+  font-size: 25px;
+}
+#hero .cta {
+  margin-top: 40px;
+}
+#hero .cta .btn {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 20px 40px;
+  background: linear-gradient(80deg, rgba(237, 222, 191, 0.4392156863), rgba(137, 0, 9, 0.4392156863));
+  box-shadow: black 5px 5px 60px;
+  margin: 0 20px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 7;
+}
+#hero .texte {
+  width: 86%;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+#batman-cinema {
+  margin-top: 46px;
+}
+
+#allie {
+  margin-top: 200px;
+}
+
+.bat-cote {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  transform: translateY(-85%);
+}
+
+.batman-personnage {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.perso-item .perso-info {
+  text-align: center;
+}
+
+section .titre {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 30px 0;
+}
+section .description {
+  margin-bottom: 30px;
+  text-align: justify;
+  width: 85%;
+  font-size: 21px;
+}
+section .flecheBas {
+  display: block;
+  margin: 0 auto;
+  margin-top: 250px;
+}
+
+#bat-item {
+  width: 120px;
+  position: relative;
+  transform: translate(100px, 60px);
+}
+
+#justice-league-img {
+  position: relative;
+  z-index: 3;
+}
+
+#multimedia .button {
+  position: relative;
+  top: 155px;
+  background: none;
+}
+#multimedia .slide {
+  display: flex;
+  width: 60%;
+  margin: 40px auto;
+}
+#multimedia .slide p {
+  font-size: 15px;
+}
+#multimedia .slide p span {
+  color: #ff0;
+}
+#multimedia .slide .slide-img {
+  width: 100%;
+}
+#multimedia .slide .slide-img img {
+  height: 100%;
+}
+#multimedia .slide .slide-text {
+  padding: 15px;
+  background: linear-gradient(#19587D, darkgray);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#right {
+  right: -82%;
+}
+
+#left {
+  left: 7%;
+}
+
+#contact .formulaire input[type=email], #contact .formulaire textarea {
+  display: block;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: rgb(147, 148, 150) 1px solid;
+  padding: 10px 0;
+}
+
+#contact {
+  position: relative;
+  background: darkslategray;
+  padding: 70px 0;
+}
+#contact .formulaire {
+  width: 50%;
+  margin: 0 auto;
+}
+#contact .formulaire h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+#contact .formulaire .titre-label {
+  display: block;
+  text-transform: uppercase;
+  margin: 25px 0;
+}
+#contact .formulaire input[type=email]::placeholder, #contact .formulaire textarea::placeholder {
+  color: rgb(147, 148, 150);
+}
+#contact .formulaire input[type=submit] {
+  display: block;
+  border: none;
+  padding: 15px;
+  width: 250px;
+  margin: 25px auto;
+  cursor: pointer;
+  color: white;
+  font-family: "Rajdhani";
+  font-size: 20px;
+  background: linear-gradient(45deg, rgb(147, 148, 150), rgba(255, 0, 0, 0.363));
+}
+#contact .icon img {
+  transform: rotate(90deg);
+  width: 20px;
+}
+#contact .news {
+  margin: 15px 0;
+  border-bottom: rgb(147, 148, 150) 1px solid;
+}
+#contact .btn-group {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+#contact .btn-group label {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid;
+  border-image: linear-gradient(69deg, rgb(147, 148, 150), #19587D) 1;
+  font-size: 17px;
+}
+
+#citation {
+  margin: 90px;
+}
+#citation .item-citation {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+#citation .item-citation .auteur-citation {
+  padding-top: 30px;
+  font-size: 12px;
+  width: 45%;
+  margin: 0 auto;
+  color: rgb(147, 148, 150);
+}
+#citation .guillemet-close {
+  float: right;
+}
+
+#pop-up-box button, #question-game .btn-card button, #question-game-start .btn-card button {
+  text-transform: uppercase;
+  font-family: "Rajdhani";
+  font-size: 20px;
+  padding: 15px 60px;
+  border: none;
+  color: #fff;
+  background: linear-gradient(90deg, rgb(147, 148, 150), #bc7232);
+}
+
+#question-game-start {
+  margin: 10% 0 20% 0;
+  text-align: center;
+}
+#question-game-start .titre {
+  margin: 70px;
+}
+#question-game-start img {
+  width: 80%;
+}
+#question-game-start .btn-card {
+  margin: 40px 0;
+}
+#question-game {
+  margin: 200px 0;
+}
+#question-game .quiz-card {
+  width: 60%;
+  margin: 0 auto 0 35%;
+}
+#question-game .btn-card button {
+  margin-top: 100px;
+}
+#question-game .quiz-item #quiz-question-text {
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+#question-game .quiz-answers {
+  margin: 20px 0;
+}
+#question-game .quiz-answers div {
+  background: rgb(147, 148, 150);
+  width: 300px;
+  text-align: left;
+  margin: 20px 0 0 0;
+  padding: 14px;
+}
+#question-game .quiz-answers input[type=checkbox] {
+  appearance: checkbox;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+#question-game .quiz-answers label {
+  font-size: 20px;
+}
+
+footer {
+  margin-bottom: 10%;
+}
+footer .text-footer {
+  text-align: center;
+  font-size: 12px;
+  margin: 40px 0;
+}
+footer .text-footer img {
+  transform: translateY(6px);
+}
+footer .logo-footer {
+  text-align: center;
+}
+footer .logo-footer a {
+  padding: 10px;
+}
+footer .logo-footer .part1 a .logo-x {
+  margin: 0 10px;
+  transform: translateY(-10px);
+}
+footer .logo-footer .part2 a img {
+  transform: translateY(-8px);
+}
+
+nav a:hover {
+  color: #ff0;
+  text-decoration: underline;
+}
+nav .logo-hover:hover {
+  filter: invert(0%) sepia(100%) saturate(1680%) hue-rotate(350deg) brightness(109%) contrast(104%);
+}
+
+.pop-up {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 6;
+  font-family: "Rajdhani";
+}
+.pop-up .pop-up-content {
+  background: linear-gradient(136deg, rgb(34, 34, 34), #bc7232);
+  margin: 5% auto;
+  padding: 70px 50px 0 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  position: relative;
+  text-align: center;
+}
+.pop-up .pop-up-content .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.pop-up .pop-up-content h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.pop-up .pop-up-content #result {
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  margin: 50px 0;
+}
+
+#pop-up-box button {
+  margin: 50px 0;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
