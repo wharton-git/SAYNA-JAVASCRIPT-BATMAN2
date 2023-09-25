@@ -164,7 +164,6 @@ function debutQuiz() {
 
 start.addEventListener('click', debutQuiz)
 
-//ferme le pop up box
 
 closePopUpBtn.addEventListener('click', () => {
     popUp.style.display = 'none'
