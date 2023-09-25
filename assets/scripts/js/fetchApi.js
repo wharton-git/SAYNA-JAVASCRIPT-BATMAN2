@@ -144,7 +144,6 @@ function debutQuiz() {
                 const selectedAnswerText = questionSelect.response[index].text
                 const isGood = questionSelect.response[index].isGood
             
-                // Vérifiez si la réponse est correcte
                 if (isGood) {
                     score++
                 }
@@ -165,13 +164,14 @@ function debutQuiz() {
 
 start.addEventListener('click', debutQuiz)
 
+//ferme le pop up box
 
 closePopUpBtn.addEventListener('click', () => {
     popUp.style.display = 'none'
     window.location.reload()
 })
 
-//ferme le boite de dialogue
+
 window.addEventListener('click', (event) => {
     if (event.target == popUp) {
         popUp.style.display = 'none'
