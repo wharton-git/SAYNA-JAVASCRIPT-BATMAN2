@@ -65,13 +65,18 @@
     .perso-info {
         text-align: center;
         transform: translateY(-50px);
-        background: linear-gradient(red, blue);
+        background: linear-gradient(-45deg, rgba(255, 0, 0, 0.37), rgba(128, 128, 128, 0.603));
         border-radius: 50px;
         padding: 5%;
         width: 80%;
         margin: 0 auto;
         opacity: 0;
         transition: opacity 0.4s ease-in-out; 
+
+        p {
+            font-size: small;
+            color: $yellow;
+        }
     }
 }
 
