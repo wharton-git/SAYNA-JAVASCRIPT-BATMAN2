@@ -297,11 +297,15 @@ section {
     .quiz-card {
         width: 60%;
         margin: 0 auto 0 35%;
+
+        .titre {
+            text-align: center;
+        }
     }
     .btn-card {
         button {
             @extend %quiz-btn;
-            margin-top: 100px;
+            margin-top: 30px;
         }
     
     }
@@ -309,7 +313,7 @@ section {
     .quiz-item {
         #quiz-question-text {
             font-size: 20px;
-            margin-bottom: 100px;
+            margin: 80px 0 40px 0;
         }
     }
 

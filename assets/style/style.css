@@ -414,12 +414,15 @@ section .flecheBas {
   width: 60%;
   margin: 0 auto 0 35%;
 }
+#question-game .quiz-card .titre {
+  text-align: center;
+}
 #question-game .btn-card button {
-  margin-top: 100px;
+  margin-top: 30px;
 }
 #question-game .quiz-item #quiz-question-text {
   font-size: 20px;
-  margin-bottom: 100px;
+  margin: 80px 0 40px 0;
 }
 #question-game .quiz-answers {
   margin: 20px 0;

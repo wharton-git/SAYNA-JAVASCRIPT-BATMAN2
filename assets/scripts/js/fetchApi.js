@@ -64,31 +64,31 @@ function debutQuiz() {
 
     newContent.innerHTML = `
         <div class="quiz-card">
-        <h1 class="titre">
-            <span id="num-quiz"></span>/<span id="max-quiz"></span>
-        </h1>
-        <div class="quiz-item">
-            <div class="quiz-question">
-            <h2 id="quiz-question-text"></h2>
+            <h1 class="titre">
+                <span id="num-quiz"></span>/<span id="max-quiz"></span>
+            </h1>
+            <div class="quiz-item">
+                <div class="quiz-question">
+                <h2 id="quiz-question-text"></h2>
+                </div>
+                <div class="quiz-answers">
+                <div>
+                    <input type="checkbox" name="answer" class="quiz-answer-box">
+                    <label for="answer" class="quiz-answer-text"></label>
+                </div>
+                <div>
+                    <input type="checkbox" name="answer" class="quiz-answer-box">
+                    <label for="answer" class="quiz-answer-text"></label>
+                </div>
+                <div>
+                    <input type="checkbox" name="answer" class="quiz-answer-box">
+                    <label for="answer" class="quiz-answer-text"></label>
+                </div>
+                </div>
             </div>
-            <div class="quiz-answers">
-            <div>
-                <input type="checkbox" name="answer" class="quiz-answer-box">
-                <label for="answer" class="quiz-answer-text"></label>
+            <div class="btn-card">
+                <button id="submit-btn">Question Suivant</button>
             </div>
-            <div>
-                <input type="checkbox" name="answer" class="quiz-answer-box">
-                <label for="answer" class="quiz-answer-text"></label>
-            </div>
-            <div>
-                <input type="checkbox" name="answer" class="quiz-answer-box">
-                <label for="answer" class="quiz-answer-text"></label>
-            </div>
-            </div>
-        </div>
-        <div class="btn-card">
-            <button id="submit-btn">Question Suivant</button>
-        </div>
         </div>`
 
     quiz.innerHTML = ''
