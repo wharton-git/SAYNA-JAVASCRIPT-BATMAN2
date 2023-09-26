@@ -6,6 +6,7 @@ const closePopUpBtn = document.querySelector('.close')
 const resultTitre = document.getElementById('result-titre')
 const resultText = document.getElementById('result')
 const restart = document.getElementById('restart')
+const imageIndex = [3,4,5,10,11,18,12,19,20,21,7,14]
 
 let i = 0
 let score = 0
@@ -27,6 +28,7 @@ fetch(apiUrl)
         totalQuiz = data.length
         const questionText = question.question
         const responseChoices = question.response
+        // const indexImg = questionIndex + 3
 
         const numeroQuiz = document.getElementById('num-quiz')
         numeroQuiz.textContent = questionIndex + 1
@@ -36,6 +38,17 @@ fetch(apiUrl)
 
         const questionElement = document.getElementById("quiz-question-text")
         questionElement.textContent = questionText
+
+        if(questionIndex == 6){
+            const questionImg2 = document.getElementById("quiz-img-2")
+            questionImg2.innerHTML = `<img src="./assets/Illustrations/Batgame_13.png" alt="">`
+        }else {
+            const questionImg2 = document.getElementById("quiz-img-2")
+            questionImg2.innerHTML = ``
+        }
+
+        const questionImg = document.getElementById("quiz-img")
+        questionImg.innerHTML = `<img src="./assets/Illustrations/Batgame_${imageIndex[questionIndex]}.png" alt="">`
 
         const answerLabels = document.querySelectorAll(".quiz-answer-text")
 
@@ -71,19 +84,27 @@ function debutQuiz() {
                 <div class="quiz-question">
                 <h2 id="quiz-question-text"></h2>
                 </div>
-                <div class="quiz-answers">
-                <div>
-                    <input type="checkbox" name="answer" class="quiz-answer-box">
-                    <label for="answer" class="quiz-answer-text"></label>
-                </div>
-                <div>
-                    <input type="checkbox" name="answer" class="quiz-answer-box">
-                    <label for="answer" class="quiz-answer-text"></label>
-                </div>
-                <div>
-                    <input type="checkbox" name="answer" class="quiz-answer-box">
-                    <label for="answer" class="quiz-answer-text"></label>
-                </div>
+                <div id="quiz-quest-img">
+                    <div id="quiz-img">
+                        
+                    </div>
+                    <div id="quiz-img-2">
+                    
+                    </div>
+                    <div class="quiz-answers">
+                    <div>
+                        <input type="checkbox" name="answer" class="quiz-answer-box">
+                        <label for="answer" class="quiz-answer-text"></label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="answer" class="quiz-answer-box">
+                        <label for="answer" class="quiz-answer-text"></label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="answer" class="quiz-answer-box">
+                        <label for="answer" class="quiz-answer-text"></label>
+                    </div>
+                    </div>
                 </div>
             </div>
             <div class="btn-card">

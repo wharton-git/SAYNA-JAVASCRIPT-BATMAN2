@@ -424,6 +424,21 @@ section .flecheBas {
   font-size: 20px;
   margin: 80px 0 40px 0;
 }
+#question-game .quiz-item #quiz-img {
+  position: absolute;
+  z-index: -1;
+  transform: translateX(-200px);
+}
+#question-game .quiz-item #quiz-img img {
+  width: 20%;
+}
+#question-game .quiz-item #quiz-img-2 {
+  position: absolute;
+  transform: translateX(350px);
+}
+#question-game .quiz-item #quiz-img-2 img {
+  width: 20%;
+}
 #question-game .quiz-answers {
   margin: 20px 0;
 }

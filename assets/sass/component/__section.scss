@@ -311,9 +311,29 @@ section {
     }
 
     .quiz-item {
+        #quiz-quest-img {
+            
+        }
+
         #quiz-question-text {
             font-size: 20px;
             margin: 80px 0 40px 0;
+        }
+
+        #quiz-img {
+            position: absolute;
+            z-index: -1;
+            transform: translateX(-200px);
+            img {
+                width: 20%;
+            }
+        }
+        #quiz-img-2 {
+            position: absolute;
+            transform: translateX(350px);
+            img {
+                width: 20%;
+            }
         }
     }
 
