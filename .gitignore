@@ -1,2 +1,2 @@
 *.bat
-./sass/dart-sass
+.assets/sass/dart-sass
