@@ -15,6 +15,8 @@
     .content {
         .cta {
             margin-top: 40px;
+            display: flex;
+            justify-content: center;
             .btn {
                 pointer-events: auto;
                 text-decoration: none;
@@ -143,6 +145,11 @@ section {
             background: linear-gradient($blue, darkgray);
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
+        }
+    }
+    .trailer-img {
+        img {
+            width: 100%;
         }
     }
 }
@@ -311,9 +318,6 @@ section {
     }
 
     .quiz-item {
-        #quiz-quest-img {
-            
-        }
 
         #quiz-question-text {
             font-size: 20px;
@@ -349,8 +353,8 @@ section {
 
         input[type="checkbox"]{
             appearance:checkbox;
-            width: 20px;
-            height: 20px;
+            width: 25px;
+            height: 25px;
             margin-right: 10px;
         }
 

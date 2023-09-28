@@ -1,0 +1,239 @@
+@import "./__screen";
+
+@media #{$smartphone} {
+    .scroll {
+        transform: translateX(-5px);
+        #toTop, #toBottom {
+            width: 50px;
+            margin: 20px 0;
+        }
+    }
+    #hero {
+        .content {
+            padding-top: 100px;
+            .cta {
+                flex-direction: column;
+                .btn {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+    }
+
+    .cote {
+        height: 9600px;
+    }
+
+    .cote-game {
+        height: 1750px;
+    }
+
+    section {
+        .description {
+            width: 95%;
+        }
+    }
+
+    .batman-personnage {
+        flex-direction: column;
+    }
+
+    .perso-item {
+        text-align: center;
+
+        .perso-info {
+            width: 50%;
+            padding: 3%;
+            transform: translateY(-30px);
+        }
+        
+        img {
+            width: 250px;
+        }
+    }
+
+    #question-game {
+        .quiz-card {
+            width: 80%;
+            margin: 0 auto 0 25%;
+        }
+        .quiz-item {
+            #quiz-img {
+                transform: translateX(-170px);
+                img {
+                    width: 30%;
+                }
+
+            }
+            #quiz-img-2 {
+                transform: translateX(300px);
+                img{
+                    width: 30%;
+                }
+            }
+        }
+    }
+
+    #multimedia {
+        .slide {
+            .slide-img {
+                width:  100%;
+                img {
+                    width:  100%;
+                }
+            }
+            flex-direction: column;
+            .slide-text {
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+
+@media #{$miniphone} {
+
+    section {
+        .flecheBas {
+            margin-top: 150px;
+        }
+    }
+
+    .cote {
+        height: 8200px;
+    }
+
+    .cote-game {
+        height: 1550px;
+    }
+
+    .scroll {
+        transform: translateX(5px);
+        #toTop, #toBottom {
+            width: 50px;
+            margin: 20px 0;
+        }
+    }
+    #hero {
+        .content {
+            padding-top: 100px;
+            width: 100%;
+            .cta {
+                flex-direction: column;
+                .btn {
+                    margin-bottom: 20px;
+                    font-size: 12px;
+                }
+            }
+        }
+
+    }
+
+    section {
+        .description {
+            width: 95%;
+        }
+    }
+
+    .batman-personnage {
+        flex-direction: column;
+    }
+
+    .perso-item {
+        text-align: center;
+
+        .perso-info {
+            width: 50%;
+            padding: 3%;
+            transform: translateY(-30px);
+        }
+        
+        img {
+            width:150px;
+        }
+    }
+
+    #question-game {
+        .quiz-card {
+            width: 80%;
+            margin: 0 auto 0 25%;
+        }
+        .quiz-item {
+            #quiz-img {
+                transform: translateX(-170px);
+                img {
+                    width: 30%;
+                }
+
+            }
+            #quiz-img-2 {
+                transform: translateX(300px);
+                img{
+                    width: 30%;
+                }
+            }
+        }
+    }
+
+    #multimedia {
+        .slide {
+            .slide-img {
+                width:  100%;
+                
+                img {
+                    width:  100%;
+                }
+            }
+            flex-direction: column;
+            .slide-text {
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+
+    }
+
+    #citation {
+        margin: 90px;
+    
+        .item-citation {
+            text-align: center;
+            width: 98%;
+            margin: 0 auto;
+    
+            .auteur-citation {
+                padding-top: 30px;
+                font-size: 12px;
+                width: 70%;
+                margin: 0 auto;
+                color: $darkgrey;
+            }
+        }
+        .guillemet-open {
+            img {
+                width: 20px;
+            }
+        }
+        .guillemet-close {
+            float: right;
+            img {
+                width: 20px;
+            }
+        }
+    }
+    #allie {
+        margin-top: 100px;
+    }
+    .bat-cote {
+        width: 60%;
+    }
+}
+

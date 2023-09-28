@@ -13,7 +13,7 @@ let score = 0
 var question
 var totalQuiz = 0
 
-// Fonction pour récupérer des données JSON à partir de l'API
+// Fonction pour récupérer des données JSON à partir de l'API quiz
 function fetchQuiz(questionIndex) {
 fetch(apiUrl)
     .then(response => {

@@ -1,12 +1,13 @@
 %contour {
-    border: 2px $contourgray solid;
+    background: $contourgray;
+    height: 4px;
     position: relative;
     width: 85%;
-    left: 102px;
-    top: 143px;
+    top: 100px;
     opacity: 0.2;
     z-index: 0;
     pointer-events: none;
+    margin: 0 auto;
 }
 
 %cote {
@@ -15,8 +16,8 @@
     border: 4px $contourgray solid;
     border-top: none;
     border-bottom: none;
-    width: 100.5%;
-    transform: translateY(-200px) translateX(-2px);
+    width: 100%;
+    transform: translate(0px, -200px) ;
     pointer-events: none;
 }
 
@@ -26,10 +27,10 @@
 
 .cote {
     @extend %cote;
-    height: 1117vh;
+    height: 1150vh;
 }
 
 .cote-game {
     @extend %cote;
-    height: 355vh;
+    height: 360vh;
 }

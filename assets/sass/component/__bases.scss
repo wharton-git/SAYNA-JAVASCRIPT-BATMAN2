@@ -8,7 +8,6 @@ body {
     background-color: black;
     color: white;
     font-family: $Space;
-    font-weight: 300;
 }
 
 h1{
@@ -81,3 +80,5 @@ button{
 .hide {
     visibility: hidden;
 }
+
+@import "./__responsive";
