@@ -1,3 +1,5 @@
+/* ------------ 😆😆 Animation de scroll dans les 2 pages 😆😆 ------------- */
+
 document.addEventListener('DOMContentLoaded', function() {
     let flecheHaut = document.getElementById('toTop')
     let flecheBas = document.getElementById('toBottom')

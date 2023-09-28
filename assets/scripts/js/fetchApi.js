@@ -1,3 +1,5 @@
+/*--------------------  🚨🚨 Bienvenu dans mon code JS 🚨🚨    ----------------------------------*/
+
 const apiUrl = 'https://batman-api.sayna.space/questions'
 
 const start = document.getElementById('quiz-btn')
@@ -13,8 +15,14 @@ let score = 0
 var question
 var totalQuiz = 0
 
-// Fonction pour récupérer des données JSON à partir de l'API quiz
+// Fonction pour récupérer des données JSON à partir de l'API quiz 🙃
 function fetchQuiz(questionIndex) {
+
+const textQuiz = document.querySelectorAll('.quiz-answers div')
+textQuiz.forEach((backColor) => {
+backColor.style.backgroundColor = 'rgb(147, 148, 150)'
+})
+
 fetch(apiUrl)
     .then(response => {
     if (!response.ok) {
@@ -28,7 +36,8 @@ fetch(apiUrl)
         totalQuiz = data.length
         const questionText = question.question
         const responseChoices = question.response
-        // const indexImg = questionIndex + 3
+        
+        //Generation des questions et des reponses venant de l'api 💊💊
 
         const numeroQuiz = document.getElementById('num-quiz')
         numeroQuiz.textContent = questionIndex + 1
@@ -46,6 +55,8 @@ fetch(apiUrl)
             const questionImg2 = document.getElementById("quiz-img-2")
             questionImg2.innerHTML = ``
         }
+
+        //Change l'image selon les questions ✨✨
 
         const questionImg = document.getElementById("quiz-img")
         questionImg.innerHTML = `<img src="./assets/Illustrations/Batgame_${imageIndex[questionIndex]}.png" alt="">`
@@ -66,6 +77,8 @@ fetch(apiUrl)
     console.error('Une erreur s\'est produite lors de la récupération des données:', error)
     })
 }
+
+//fonction qui genere le structure du quiz 🫣🤔🤔
 
 function debutQuiz() {
     let quiz = document.getElementById('question-game-start')
@@ -124,6 +137,8 @@ function debutQuiz() {
             resultTitre.innerHTML = '<h2 id="result-titre">Résultat du Quiz</h2>';
             resultText.innerHTML = '<p id="result"></p>';
 
+            //calcul dynamique du score et generation du pop up en fonction 😛😛
+
             let noteBas = totalQuiz * (2 / 5)
             let noteMoyenne = totalQuiz * (4 / 5)
 
@@ -157,23 +172,32 @@ function debutQuiz() {
             })
 
         }else{
+
+            //verification des reponses et indication si Vrai ou Faux ❌⭕
+
             const checkboxes = document.querySelectorAll('.quiz-answer-box')
+            const textQuiz = document.querySelectorAll('.quiz-answers div')
             let questionSelect = question
             console.log(questionSelect)
             checkboxes.forEach((checkbox, index) => {
                 if (checkbox.checked) {
-                const selectedAnswerText = questionSelect.response[index].text
-                const isGood = questionSelect.response[index].isGood
-            
-                if (isGood) {
-                    score++
+                    const isGood = questionSelect.response[index].isGood;
+        
+                    if (isGood) {
+                        score++
+                        textQuiz[index].style.backgroundColor = 'green';
+                    }
+                    else {
+                        textQuiz[index].style.backgroundColor = 'red';
+                    }
                 }
-                }
-                checkbox.checked = false
-            })
+                checkbox.checked = false;
+            });
         
             i++
-            fetchQuiz(i)
+            setTimeout(() => {
+                fetchQuiz(i);
+            }, 200);
             console.log('Score :' + score)
         
             if ((i + 1) === totalQuiz) {
@@ -185,7 +209,7 @@ function debutQuiz() {
 
 start.addEventListener('click', debutQuiz)
 
-//ferme le pop up box
+//ferme le pop up box 🩸
 
 closePopUpBtn.addEventListener('click', () => {
     popUp.style.display = 'none'

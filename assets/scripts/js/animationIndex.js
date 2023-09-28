@@ -1,3 +1,5 @@
+/* ----------------- 😉 Animation pricipale du page index 😉  ------------------- */
+
 const persoImages = document.querySelectorAll('.batman-personnage img');
 const persoInfos = document.querySelectorAll('.perso-info');
 
