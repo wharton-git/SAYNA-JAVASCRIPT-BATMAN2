@@ -93,6 +93,27 @@
             }
         }
     }
+
+    .pop-up {
+        padding: 40px;
+        .pop-up-content {
+
+            h2 {
+                font-size: 25px;
+            }
+    
+            #result {
+                font-size: 20px;
+            }
+        }
+    
+    }
+    
+    #pop-up-box {
+        button {
+            font-size: 20px;
+        }
+    }
 }
 
 
@@ -109,7 +130,7 @@
     }
 
     .cote-game {
-        height: 1550px;
+        height: 1850px;
     }
 
     .scroll {
@@ -161,21 +182,14 @@
     #question-game {
         .quiz-card {
             width: 80%;
-            margin: 0 auto 0 25%;
+            margin: 0 auto 0 10%;
         }
         .quiz-item {
             #quiz-img {
-                transform: translateX(-170px);
-                img {
-                    width: 30%;
-                }
-
+                display: none;
             }
             #quiz-img-2 {
-                transform: translateX(300px);
-                img{
-                    width: 30%;
-                }
+                display: none;
             }
         }
     }
@@ -234,6 +248,27 @@
     }
     .bat-cote {
         width: 60%;
+    }
+
+    .pop-up {
+        padding: 25px;
+        .pop-up-content {
+            margin-top: 20px ;
+            h2 {
+                font-size: 20px;
+            }
+    
+            #result {
+                font-size: 15px;
+            }
+        }
+    
+    }
+    
+    #pop-up-box {
+        button {
+            font-size: 15px;
+        }
     }
 }
 

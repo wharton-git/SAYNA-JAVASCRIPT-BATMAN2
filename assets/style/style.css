@@ -512,6 +512,10 @@ nav .logo-hover:hover {
   transition: transform 0.3s ease-in-out;
 }
 
+#pop-up-box {
+  transition: all 2s ease-in-out;
+}
+
 .animationElement {
   opacity: 0;
   transform: translateX(-200px);
@@ -522,6 +526,26 @@ nav .logo-hover:hover {
   opacity: 1;
   transform: translateX(0);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.zoom {
+  transform: scale(0);
+  transition: transform 1.5s;
+}
+
+.activeZoom {
+  transform: scale(1);
+  transition: transform 1.5s;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fadeIn-active {
+  opacity: 1;
+  transition: opacity 1s;
 }
 
 .pop-up {
@@ -646,6 +670,18 @@ nav .logo-hover:hover {
   #multimedia .slide .slide-text p {
     font-size: 12px;
   }
+  .pop-up {
+    padding: 40px;
+  }
+  .pop-up .pop-up-content h2 {
+    font-size: 25px;
+  }
+  .pop-up .pop-up-content #result {
+    font-size: 20px;
+  }
+  #pop-up-box button {
+    font-size: 20px;
+  }
 }
 @media (max-width: 467px) {
   section .flecheBas {
@@ -655,7 +691,7 @@ nav .logo-hover:hover {
     height: 8200px;
   }
   .cote-game {
-    height: 1550px;
+    height: 1850px;
   }
   .scroll {
     transform: translateX(5px);
@@ -694,19 +730,13 @@ nav .logo-hover:hover {
   }
   #question-game .quiz-card {
     width: 80%;
-    margin: 0 auto 0 25%;
+    margin: 0 auto 0 10%;
   }
   #question-game .quiz-item #quiz-img {
-    transform: translateX(-170px);
-  }
-  #question-game .quiz-item #quiz-img img {
-    width: 30%;
+    display: none;
   }
   #question-game .quiz-item #quiz-img-2 {
-    transform: translateX(300px);
-  }
-  #question-game .quiz-item #quiz-img-2 img {
-    width: 30%;
+    display: none;
   }
   #multimedia .slide {
     flex-direction: column;
@@ -753,6 +783,21 @@ nav .logo-hover:hover {
   }
   .bat-cote {
     width: 60%;
+  }
+  .pop-up {
+    padding: 25px;
+  }
+  .pop-up .pop-up-content {
+    margin-top: 20px;
+  }
+  .pop-up .pop-up-content h2 {
+    font-size: 20px;
+  }
+  .pop-up .pop-up-content #result {
+    font-size: 15px;
+  }
+  #pop-up-box button {
+    font-size: 15px;
   }
 }
 

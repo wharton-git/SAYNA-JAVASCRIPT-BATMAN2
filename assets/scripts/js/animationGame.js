@@ -62,3 +62,40 @@ img.onload = function () {
     console.log('Image chargée avec succès'); 
     bat.draw(); 
 };
+
+
+//Zoom des images
+
+const zoomElements = document.querySelectorAll('.zoom');
+
+function handleZoomVisibility(elements) {
+    elements.forEach((element) => {
+        let isVisible = false;
+
+        function checkZoomVisibility() {
+            const { clientHeight } = document.documentElement;
+            const topElementEcran = element.getBoundingClientRect().top;
+            const elementHeight = element.clientHeight;
+
+            const isCurrentlyVisible = (
+                topElementEcran + elementHeight > 0 &&
+                topElementEcran < clientHeight
+            );
+
+            if (!isVisible && isCurrentlyVisible) {
+                element.classList.add('activeZoom');
+            } else if (isVisible && !isCurrentlyVisible) {
+                element.classList.remove('activeZoom');
+            }
+
+            isVisible = isCurrentlyVisible;
+        }
+
+        window.addEventListener('load', checkZoomVisibility);
+        window.addEventListener('scroll', checkZoomVisibility);
+
+        checkZoomVisibility();
+    });
+}
+
+handleZoomVisibility(zoomElements);

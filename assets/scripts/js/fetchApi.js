@@ -36,7 +36,7 @@ fetch(apiUrl)
         totalQuiz = data.length
         const questionText = question.question
         const responseChoices = question.response
-        
+
         //Generation des questions et des reponses venant de l'api 💊💊
 
         const numeroQuiz = document.getElementById('num-quiz')
@@ -50,7 +50,9 @@ fetch(apiUrl)
 
         if(questionIndex == 6){
             const questionImg2 = document.getElementById("quiz-img-2")
-            questionImg2.innerHTML = `<img src="./assets/Illustrations/Batgame_13.png" alt="">`
+            questionImg2.innerHTML = `<div class="fade-in">
+                                            <img src="./assets/Illustrations/Batgame_13.png" alt="">
+                                        </div>`
         }else {
             const questionImg2 = document.getElementById("quiz-img-2")
             questionImg2.innerHTML = ``
@@ -59,13 +61,26 @@ fetch(apiUrl)
         //Change l'image selon les questions ✨✨
 
         const questionImg = document.getElementById("quiz-img")
-        questionImg.innerHTML = `<img src="./assets/Illustrations/Batgame_${imageIndex[questionIndex]}.png" alt="">`
+        questionImg.innerHTML = `<div class="fade-in">
+                                    <img src="./assets/Illustrations/Batgame_${imageIndex[questionIndex]}.png" alt="">
+                                </div>`
 
         const answerLabels = document.querySelectorAll(".quiz-answer-text")
 
         responseChoices.forEach((choice, index) => {
         answerLabels[index].textContent = choice.text
 
+        const divQuestionImg = document.querySelector('#quiz-img > div');
+
+        setTimeout(function () {
+            divQuestionImg.classList.add('fadeIn-active');
+        }, 100);
+
+        const divQuestionImg2 = document.querySelector('#quiz-img-2 > div');
+
+        setTimeout(function () {
+            divQuestionImg2.classList.add('fadeIn-active');
+        }, 100);
 
         })
     }
@@ -124,6 +139,7 @@ function debutQuiz() {
                 <button id="submit-btn">Question Suivant</button>
             </div>
         </div>`
+
 
     quiz.innerHTML = ''
     quiz.appendChild(newContent)

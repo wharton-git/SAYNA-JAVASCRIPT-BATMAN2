@@ -328,9 +328,12 @@ section {
             position: absolute;
             z-index: -1;
             transform: translateX(-200px);
-            img {
-                width: 20%;
+            .fade {
+                img {
+                    width: 20%;
+                }
             }
+
         }
         #quiz-img-2 {
             position: absolute;

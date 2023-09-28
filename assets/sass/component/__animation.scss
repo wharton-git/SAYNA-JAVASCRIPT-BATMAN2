@@ -35,6 +35,10 @@ nav {
     
 }
 
+#pop-up-box {
+    transition: all 2s ease-in-out;
+}
+
 
 .animationElement {
     opacity: 0;
@@ -46,4 +50,24 @@ nav {
     opacity: 1;
     transform: translateX(0);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.zoom {
+    transform: scale(0); 
+    transition: transform 1.5s;
+}
+
+.activeZoom {
+    transform: scale(1); 
+    transition: transform 1.5s;
+}
+
+.fade-in {
+    opacity: 0; 
+    transition: opacity 1s; 
+}
+
+.fadeIn-active {
+    opacity: 1; 
+    transition: opacity 1s; 
 }
